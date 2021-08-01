@@ -43,7 +43,7 @@ namespace SimpleTextEditor
             this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
             this.tsFileName = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.tsModified = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -73,7 +73,7 @@ namespace SimpleTextEditor
             this.toolStripButton3,
             this.toolStripButton2,
             this.toolStripButton1,
-            this.toolStripLabel1,
+            this.tsModified,
             this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 425);
             this.toolStrip1.Name = "toolStrip1";
@@ -155,6 +155,7 @@ namespace SimpleTextEditor
             this.mnuNew.Name = "mnuNew";
             this.mnuNew.Size = new System.Drawing.Size(180, 22);
             this.mnuNew.Text = "Nowy";
+            this.mnuNew.Click += new System.EventHandler(this.mnuNew_Click);
             // 
             // tsFileName
             // 
@@ -169,12 +170,11 @@ namespace SimpleTextEditor
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripLabel1
+            // tsModified
             // 
-            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
-            this.toolStripLabel1.Text = "toolStripLabel1";
+            this.tsModified.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsModified.Name = "tsModified";
+            this.tsModified.Size = new System.Drawing.Size(0, 22);
             // 
             // toolStripSeparator2
             // 
@@ -227,6 +227,7 @@ namespace SimpleTextEditor
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Text editor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -251,7 +252,7 @@ namespace SimpleTextEditor
         private System.Windows.Forms.ToolStripMenuItem mnuNew;
         private System.Windows.Forms.ToolStripLabel tsFileName;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel tsModified;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
