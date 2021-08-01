@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLParser", "XMLParser\XMLP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONParser", "JSONParser\JSONParser.csproj", "{75F149B9-F0E3-4B1C-9E74-D2E55243DC1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLConnect", "MySQLConnect\MySQLConnect.csproj", "{0E4A44AD-1F7A-47D4-A8F4-F7D5E1A7F903}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{75F149B9-F0E3-4B1C-9E74-D2E55243DC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F149B9-F0E3-4B1C-9E74-D2E55243DC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F149B9-F0E3-4B1C-9E74-D2E55243DC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4A44AD-1F7A-47D4-A8F4-F7D5E1A7F903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4A44AD-1F7A-47D4-A8F4-F7D5E1A7F903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4A44AD-1F7A-47D4-A8F4-F7D5E1A7F903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4A44AD-1F7A-47D4-A8F4-F7D5E1A7F903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
